@@ -13,7 +13,7 @@ cpbin:
 	cp -r ./bin/* test
 
 cpjson:
-	cp ./settings.json test/$(WINDOWS)
+	cp ./settings.json test/$(WINDOWS)/
 
 ##########BUILD##########
 .PHONY: buildwindows
