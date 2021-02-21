@@ -30,7 +30,7 @@ func main() {
 	for i := 0; i < settings.Qty; i++ {
 		var s string
 		hostBuf := bytes.NewBufferString(s)
-		fmt.Fprintf(hostBuf, "%s%02d", hostFront, hostCounter)
+		fmt.Fprintf(hostBuf, "%s%03d", hostFront, hostCounter)
 
 		f := file.CreateFile(hostBuf.String() + ".bat")
 		defer f.Close()
